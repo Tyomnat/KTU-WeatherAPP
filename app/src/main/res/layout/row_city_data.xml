@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cityName"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/city_border"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/cityTemp"
+        android:layout_weight="1.5"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/city_border">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/removeCity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="2"
+        android:src="@drawable/ic_city_remove"
+        android:clickable="true"
+        android:focusable="true">
+    </ImageView>
+
+
+
+</LinearLayout>
