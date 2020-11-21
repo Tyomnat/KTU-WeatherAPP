@@ -3,11 +3,21 @@ package com.example.ktuweather;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
+
 public class WeatherDataClass implements Parcelable {
     double temperature;
     double feels_like;
     int humidity;
     String city;
+    Date updateTime;
 
     public double getTemperature() {
         return temperature;
@@ -41,6 +51,12 @@ public class WeatherDataClass implements Parcelable {
         this.city = city;
     }
 
+    public Date getUpdateTime() {return updateTime;}
+
+    public void setUpdateTime() {
+        this.updateTime = new Date();
+    }
+
 
     @Override
     public int describeContents() {
@@ -56,6 +72,7 @@ public class WeatherDataClass implements Parcelable {
     }
 
     public WeatherDataClass() {
+        this.updateTime = new Date();
     }
 
     protected WeatherDataClass(Parcel in) {
@@ -63,6 +80,7 @@ public class WeatherDataClass implements Parcelable {
         this.feels_like = in.readDouble();
         this.humidity = in.readInt();
         this.city = in.readString();
+        this.updateTime = new Date();
     }
 
     public static final Parcelable.Creator<WeatherDataClass> CREATOR = new Parcelable.Creator<WeatherDataClass>() {

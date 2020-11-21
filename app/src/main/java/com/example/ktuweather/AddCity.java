@@ -49,35 +49,26 @@ public class AddCity extends AppCompatActivity {
     TextView tempText, descText, humidText;
     EditText searchText;
 
-    String[] cityNames = {"Kaunas", "Vilnius", "Klaipeda", "Taurage"};
     AppCompatAutoCompleteTextView autoCompleteTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_city);
-        autoCompleteTextView = (AppCompatAutoCompleteTextView) findViewById(R.id.searchText);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, android.R.layout.select_dialog_item, cityNames);
-        autoCompleteTextView.setThreshold(3); //will start working from the third character
-        autoCompleteTextView.setAdapter(adapter);
-
-        /*Gson gson = new Gson();
-
-        Set<String> cityList = new HashSet<>();
-        String json = loadJSONFromAsset(this, "city.list.json");
-        Type listType = new TypeToken<HashSet<String>>() {}.getType();
-        try{
-            cityList = new Gson().fromJson(json, listType);
-        }
-        catch (Exception e) {
-            // we never know :)
-        }
-
-        //String possibleCities = gson.fromJson()*/
 
         final Context context = this;
+
+        //Read city list
+        ArrayList cityList;
+        cityList = JSONtoCityList();
+
+        if (cityList != null) {
+            autoCompleteTextView = (AppCompatAutoCompleteTextView) findViewById(R.id.searchText);
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>
+                    (this, android.R.layout.select_dialog_item, cityList);
+            autoCompleteTextView.setThreshold(3); //will start working from the third character
+            autoCompleteTextView.setAdapter(adapter);
+        }
 
         search = findViewById(R.id.search);
         tempText = findViewById(R.id.tempText);
@@ -113,6 +104,24 @@ public class AddCity extends AppCompatActivity {
         return text;
     }
 
+    private ArrayList<String> JSONtoCityList(){
+        Gson gson = new Gson();
+
+        ArrayList<String> cityList = new ArrayList<>();
+
+        String json = loadJSONFromAsset(this, "city.list.json");
+        Type listType = new TypeToken<ArrayList<String>>() {}.getType();
+        try{
+            cityList = new Gson().fromJson(json, listType);
+            return cityList;
+        }
+        catch (Exception e) {
+            // we never know :)
+        }
+
+        return cityList;
+    }
+
     private void getWeatherData(final String name, final Context context){
         final WeatherDataClass cityData = new WeatherDataClass();
 
@@ -127,6 +136,7 @@ public class AddCity extends AppCompatActivity {
                     cityData.setTemperature(response.body().getMain().getTemp());
                     cityData.setFeels_like(response.body().getMain().getFeels_like());
                     cityData.setHumidity(response.body().getMain().getHumidity());
+                    cityData.setUpdateTime();
 
                     Intent i = new Intent(context, MainActivity.class);
                     i.putExtra("cityData", cityData);

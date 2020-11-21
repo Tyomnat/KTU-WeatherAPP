@@ -9,11 +9,45 @@
     android:background="@color/colorBckg">
 
     <LinearLayout
-        android:id="@+id/city_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <com.example.ktuweather.IndicatingView
+            android:id="@+id/generated_graphic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="#888888"/>
+        <Button
+            android:id="@+id/send_request"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:background="@drawable/button_default"
+            android:text="Refresh weather data" />
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/city_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <com.example.ktuweather.ui.home.CustomProgressBarView
+        android:id="@+id/cstm_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="50dp">
+    </com.example.ktuweather.ui.home.CustomProgressBarView>
 
     <LinearLayout
         android:layout_width="match_parent"

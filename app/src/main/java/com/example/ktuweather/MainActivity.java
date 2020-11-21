@@ -1,20 +1,15 @@
 package com.example.ktuweather;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.content.SharedPreferences;
+import android.content.Context;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Menu;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.example.ktuweather.Retrofit.ApiClient;
+import com.example.ktuweather.Retrofit.ApiInterface;
+import com.example.ktuweather.Retrofit.Example;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -23,26 +18,33 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Date;
+
+import retrofit2.Call;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ArrayList<WeatherDataClass> cities;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
         cities = PrefConfig.readListFromPref(this);
-        if (cities == null)
-            cities = new ArrayList<WeatherDataClass>();
-
+        if (cities.isEmpty())
+            cities = new ArrayList<>();
+        else if ((cities.get(0).getUpdateTime().getTime())/60000 < (new Date().getTime())/60000){
+            if (updateCityData(this, 0)) {
+                cities = PrefConfig.readListFromPref(this);
+                finish();
+                startActivity(getIntent());
+            }
+        }
+        setContentView(R.layout.activity_main);
         Bundle objectCity = getIntent().getExtras();
         if (objectCity != null) {
-            WeatherDataClass c = (WeatherDataClass) objectCity.getParcelable("cityData");
+            WeatherDataClass c = objectCity.getParcelable("cityData");
             if (!containsCity(c, cities)) {
                 cities.add(c);
                 PrefConfig.writeListInPref(this, cities);
@@ -51,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                         "This city is already added", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        }
+        } // if new city is being added
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public ArrayList<WeatherDataClass> getCities(){
+        cities = PrefConfig.readListFromPref(this);
         return cities;
     }
 
@@ -90,6 +93,49 @@ public class MainActivity extends AppCompatActivity {
         for (WeatherDataClass cit : cities){
             if (cit.getCity().equals(c.getCity()))
                 return true;
+        }
+        return false;
+    }
+
+    public boolean updateCityData (final Context context, final int i){
+        final boolean[] success = {false};
+        if (i<cities.size()) {
+            final String cityName = cities.get(i).getCity();
+            ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
+            final Call<Example> call = apiInterface.getWeatherData(cityName);
+            Thread update = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Response<Example> response = call.execute();
+                        WeatherDataClass cityData = new WeatherDataClass();
+                        cityData.setCity(cityName);
+                        cityData.setTemperature(response.body().getMain().getTemp());
+                        cityData.setFeels_like(response.body().getMain().getFeels_like());
+                        cityData.setHumidity(response.body().getMain().getHumidity());
+                        cityData.setUpdateTime();
+                        cities.set(i, cityData);
+                        if (updateCityData(context, i + 1)) {
+                            success[0] = true;
+                        }
+                        if (i == 0) {
+                            PrefConfig.writeListInPref(context, cities);
+                        }
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                }
+            });
+            update.start();
+            try {
+                update.join();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            if (success[0])
+                return true;
+        } else {
+            return true;
         }
         return false;
     }
