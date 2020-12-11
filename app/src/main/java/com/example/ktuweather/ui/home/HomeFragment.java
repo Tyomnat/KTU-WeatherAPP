@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.ktuweather.AddCity;
 import com.example.ktuweather.IndicatingView;
+import com.example.ktuweather.LogoActivity;
 import com.example.ktuweather.MainActivity;
 import com.example.ktuweather.PrefConfig;
 import com.example.ktuweather.R;
@@ -51,11 +52,11 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(getActivity(), AddCity.class));
             }
         });
-        handler = new Handler();
+        /*handler = new Handler();
         indicator = (IndicatingView) root.findViewById(R.id.generated_graphic);
-        Button sendRequestButton = (Button) root.findViewById(R.id.send_request);
         progressBar = (CustomProgressBarView) root.findViewById(R.id.cstm_progressbar);
-        setProgressBarStatus(CustomProgressBarView.NOTSTARTED, 0);
+        setProgressBarStatus(CustomProgressBarView.NOTSTARTED, 0);*/
+        Button sendRequestButton = (Button) root.findViewById(R.id.send_request);
         sendRequestButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -72,6 +73,15 @@ public class HomeFragment extends Fragment {
     private void addCitiesToView() {
         MainActivity activity = (MainActivity) getActivity();
         ArrayList<WeatherDataClass> cities = activity.getCities();
+
+        if (true){
+            try {
+                if (cities.isEmpty())
+                    cities = new ArrayList<>();
+            } catch (Exception ex){
+                cities = new ArrayList<>();
+            }
+        }
 
         for(WeatherDataClass cit : cities) {
             final View cityView = getLayoutInflater().inflate(R.layout.row_city_data, null, false);
@@ -118,38 +128,39 @@ public class HomeFragment extends Fragment {
     private void sendRequest() {
         final MainActivity activity = (MainActivity) getActivity();
         ArrayList<WeatherDataClass> cities = activity.getCities();
-        requestInProgress = true;
+        /*requestInProgress = true;
         setIndicatorStatus(IndicatingView.INPROGRESS);
         setProgressBarStatus(CustomProgressBarView.INPROGRESS, 0);
-        startProgressBar();
+        startProgressBar();*/
         Thread a = new Thread(new Runnable() {
             @Override
             public void run() {
                 if (activity.updateCityData(activity, 0)) { // SUCCESS
                     try {
-                        Thread.sleep(3750);
-                        setIndicatorStatus(IndicatingView.SUCCESS);
                         getActivity().runOnUiThread(new Runnable(){
                             @Override
                             public void run(){
                                 city_list.removeAllViews();
                                 addCitiesToView();
+                                startActivity(new Intent(activity, LogoActivity.class));
+                                activity.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                             }
                         });
-                    } catch (InterruptedException e) {
+                        //Thread.sleep(3000);
+                        //setIndicatorStatus(IndicatingView.SUCCESS);
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                 } else { // FAILED
-                    setIndicatorStatus(IndicatingView.FAILED);
+                    //setIndicatorStatus(IndicatingView.FAILED);
                 }
             }
         });
         a.start();
-
-        indicator.setStrokes(0);
+        /*indicator.setStrokes(0);
         LoadAnimation loadA = new LoadAnimation(indicator);
         loadA.setDuration(3750);
-        indicator.startAnimation(loadA);
+        indicator.startAnimation(loadA);*/
     }
 
     public void setIndicatorStatus(final int status){

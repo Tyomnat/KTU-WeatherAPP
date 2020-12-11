@@ -34,6 +34,7 @@
         <option value="Interface" />
         <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -48,25 +49,37 @@
     <property name="DEBUGGABLE_DEVICE" value="Pixel_3a_API_30 [emulator-5554]" />
     <property name="DEBUGGABLE_PROCESS" value="com.example.ktuweather" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-11T16:29:47.873Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/values" />
+    <property name="last_opened_file_path" value="E:/bitDownloads/Opera Downloads/Mobiliu programeliu kurimo pagrindai/KTUDormitoryApp" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.-1278498896">
       <recent name="com.example.ktuweather" />
     </key>
+    <key name="android.template.-749626130">
+      <recent name="com.example.ktuweather" />
+    </key>
     <key name="android.template.1815194709">
       <recent name="com.example.ktuweather" />
+    </key>
+    <key name="android.template.-1845716237">
+      <recent name="com.example.ktuweather.lab3" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\KTU\5-Semestras\App-Dev\app\src\main\assets" />
       <recent name="E:\KTU\5-Semestras\App-Dev\app\src\main\java\com\example\ktuweather" />
       <recent name="E:\KTU\5-Semestras\App-Dev\app\src\main\res" />
     </key>
+    <key name="android.template.-904269689">
+      <recent name="com.example.ktuweather" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -125,6 +138,30 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="App-Dev [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.App-Dev [dependencies]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -144,189 +181,135 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="165" key="#app/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605805892785" />
-    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1601841543850">
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1607627329285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601841543850" />
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607627329285" />
+    <state x="756" y="379" width="408" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606133859495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="379" width="408" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1606133859495" />
     <state x="592" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601573752252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="592" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601573752252" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601835433086">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607634982134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601835433086" />
-    <state x="540" y="274" key="AndroidCreateResourceFileDialog" timestamp="1605887028720">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607634982134" />
+    <state x="540" y="274" key="AndroidCreateResourceFileDialog" timestamp="1607537331869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="274" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601893859103" />
-    <state x="540" y="274" key="AndroidCreateResourceFileDialog/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605887028720" />
+    <state x="540" y="274" key="AndroidCreateResourceFileDialog/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607537331869" />
     <state x="3215" y="285" key="AndroidProcessChooserDialog" timestamp="1601976252302">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="3215" y="285" key="AndroidProcessChooserDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976252302" />
     <state x="1295" y="285" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601905056917" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605966709051">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1607622828433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605966709051" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607622828433" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601903704927" />
-    <state width="1877" height="180" key="GridCell.Tab.0.bottom" timestamp="1605968244510">
+    <state width="1860" height="224" key="GridCell.Tab.0.bottom" timestamp="1607688576267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="180" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172814852" />
     <state width="1877" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976878678" />
-    <state width="1877" height="180" key="GridCell.Tab.0.bottom/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968244510" />
+    <state width="1860" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607688576267" />
     <state width="914" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601905534672" />
-    <state width="1877" height="180" key="GridCell.Tab.0.center" timestamp="1605968244509">
+    <state width="1860" height="224" key="GridCell.Tab.0.center" timestamp="1607688576267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="180" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172814852" />
     <state width="1877" height="346" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976878678" />
-    <state width="1877" height="180" key="GridCell.Tab.0.center/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968244509" />
+    <state width="1860" height="224" key="GridCell.Tab.0.center/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607688576267" />
     <state width="914" height="346" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601905534672" />
-    <state width="1877" height="180" key="GridCell.Tab.0.left" timestamp="1605968244509">
+    <state width="1860" height="224" key="GridCell.Tab.0.left" timestamp="1607688576266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="180" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172814852" />
     <state width="1877" height="346" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976878677" />
-    <state width="1877" height="180" key="GridCell.Tab.0.left/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968244509" />
+    <state width="1860" height="224" key="GridCell.Tab.0.left/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607688576266" />
     <state width="914" height="346" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601905534672" />
-    <state width="1877" height="180" key="GridCell.Tab.0.right" timestamp="1605968244509">
+    <state width="1860" height="224" key="GridCell.Tab.0.right" timestamp="1607688576267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="180" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172814852" />
     <state width="1877" height="346" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976878678" />
-    <state width="1877" height="180" key="GridCell.Tab.0.right/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968244509" />
+    <state width="1860" height="224" key="GridCell.Tab.0.right/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607688576267" />
     <state width="914" height="346" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601905534672" />
-    <state width="1877" height="180" key="GridCell.Tab.1.bottom" timestamp="1605968244510">
+    <state width="1860" height="224" key="GridCell.Tab.1.bottom" timestamp="1607688576267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="180" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172814853" />
     <state width="1877" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976878678" />
-    <state width="1877" height="180" key="GridCell.Tab.1.bottom/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968244510" />
+    <state width="1860" height="224" key="GridCell.Tab.1.bottom/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607688576267" />
     <state width="914" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601905534673" />
-    <state width="1877" height="180" key="GridCell.Tab.1.center" timestamp="1605968244510">
+    <state width="1860" height="224" key="GridCell.Tab.1.center" timestamp="1607688576267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="180" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172814852" />
     <state width="1877" height="346" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976878678" />
-    <state width="1877" height="180" key="GridCell.Tab.1.center/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968244510" />
+    <state width="1860" height="224" key="GridCell.Tab.1.center/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607688576267" />
     <state width="914" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601905534673" />
-    <state width="1877" height="180" key="GridCell.Tab.1.left" timestamp="1605968244510">
+    <state width="1860" height="224" key="GridCell.Tab.1.left" timestamp="1607688576267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="180" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172814852" />
     <state width="1877" height="346" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976878678" />
-    <state width="1877" height="180" key="GridCell.Tab.1.left/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968244510" />
+    <state width="1860" height="224" key="GridCell.Tab.1.left/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607688576267" />
     <state width="914" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601905534673" />
-    <state width="1877" height="180" key="GridCell.Tab.1.right" timestamp="1605968244510">
+    <state width="1860" height="224" key="GridCell.Tab.1.right" timestamp="1607688576267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="180" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172814852" />
     <state width="1877" height="346" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601976878678" />
-    <state width="1877" height="180" key="GridCell.Tab.1.right/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968244510" />
+    <state width="1860" height="224" key="GridCell.Tab.1.right/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607688576267" />
     <state width="914" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601905534673" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1601885939941">
+    <state x="633" y="218" key="NewModule_or_Project.wizard" timestamp="1607531138018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="633" y="218" key="NewModule_or_Project.wizard/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607531138018" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1607532127620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601885939941" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607532127620" />
+    <state x="776" y="297" key="chooseDestDirectoryDialog" timestamp="1607531997020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607531997020" />
     <state x="92" y="92" width="1736" height="856" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1605806105844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601835635532" />
     <state x="92" y="92" width="1736" height="856" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605806105844" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1605971196435">
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1607703978686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602170684633" />
     <state x="2576" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601975331992" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605971196435" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607703978686" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601901090587" />
-    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1605965989111">
+    <state x="961" y="113" width="607" height="804" key="find.popup" timestamp="1606133919697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605965989111" />
+    <state x="961" y="113" width="607" height="804" key="find.popup/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1606133919697" />
     <state x="616" y="242" key="run.anything.popup" timestamp="1602172836887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="242" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172836887" />
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1605968005081">
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1607532735072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601740595708" />
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1605968005081" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/4.-1080.1920.1040@0.0.1920.1040" timestamp="1607532735072" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/MainActivity.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/MainActivity.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/MainActivity.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/MainActivity.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/MainActivity.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/MainActivity.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/MainActivity.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/MainActivity.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/ui/map/MapFragment.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/ui/map/MapFragment.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/ui/map/MapFragment.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/ui/map/MapFragment.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ktuweather/ui/map/MapFragment.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
         <watch expression="this" />

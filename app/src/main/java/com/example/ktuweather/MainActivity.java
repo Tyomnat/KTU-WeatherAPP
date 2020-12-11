@@ -32,8 +32,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         cities = PrefConfig.readListFromPref(this);
-        if (cities.isEmpty())
-            cities = new ArrayList<>();
+        if (true){
+            try {
+                if (cities.isEmpty())
+                    cities = new ArrayList<>();
+            } catch (Exception ex){
+                cities = new ArrayList<>();
+            }
+        }
         else if ((cities.get(0).getUpdateTime().getTime())/60000 < (new Date().getTime())/60000){
             if (updateCityData(this, 0)) {
                 cities = PrefConfig.readListFromPref(this);

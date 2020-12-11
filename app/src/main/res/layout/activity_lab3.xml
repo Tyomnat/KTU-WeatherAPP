@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.statistics.StatisticsFragment"
+android:background="@color/colorBckg"
+android:orientation="vertical">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/degrees"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"/>
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/coordinates"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"/>
+    </TableRow>
+
+    <TableRow
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/geoposition"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"/>
+    </TableRow>
+
+</TableLayout>
+
+    <Button
+        android:id="@+id/start_and_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"/>
+
+    <Button
+        android:id="@+id/north_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take picture when facing north"/>
+
+<Button
+    android:id="@+id/take_photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Take Photo"/>
+
+<FrameLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>
+
+</LinearLayout>
